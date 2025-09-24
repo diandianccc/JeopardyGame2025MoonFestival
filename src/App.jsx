@@ -317,7 +317,7 @@ function TeamSetup({ onStartGame }) {
   return (
     <div className="team-setup">
       <header className="header">
-        <h1>Mid-Autumn Festival Jeopardy</h1>
+        <h1>🌕 Mid-Autumn Festival Jeopardy 🏮</h1>
       </header>
       <div className="setup-content">
         <h2>Game Setup</h2>

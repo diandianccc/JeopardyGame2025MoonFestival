@@ -458,17 +458,21 @@
 }
 
 .team-setup .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 1.5rem 1rem;
   background: #000000;
   color: #ffffff;
   border-bottom: 2px solid #1a4fa0;
+  min-height: 120px;
 }
 
 .team-setup .header h1 {
   margin: 0;
   font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #ffd700;
   text-transform: uppercase;
@@ -625,7 +629,7 @@
 /* Responsive adjustments for team setup */
 @media (max-width: 768px) {
   .team-setup .header h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   
   .setup-content {
