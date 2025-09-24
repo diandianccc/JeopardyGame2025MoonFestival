@@ -14,7 +14,7 @@ An educational and fun Jeopardy-style game celebrating the Mid-Autumn Festival! 
 
 ## 🚀 Live Demo
 
-Play the game at: [https://yourusername.github.io/jeopardy-game/](https://yourusername.github.io/jeopardy-game/)
+Play the game at: [https://diandianccc.github.io/JeopardyGame2025MoonFestival/](https://diandianccc.github.io/JeopardyGame2025MoonFestival/)
 
 ## 🛠️ Development
 
@@ -24,8 +24,8 @@ Play the game at: [https://yourusername.github.io/jeopardy-game/](https://yourus
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/jeopardy-game.git
-cd jeopardy-game
+git clone https://github.com/diandianccc/JeopardyGame2025MoonFestival.git
+cd JeopardyGame2025MoonFestival
 npm install
 ```
 
