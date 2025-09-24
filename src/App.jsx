@@ -289,7 +289,6 @@ function App() {
   )
 }
 
-// Team Setup Component
 function TeamSetup({ onStartGame }) {
   const [numTeams, setNumTeams] = useState(2)
   const defaultTeamNames = ['Team Astro', 'Team Cody', 'Team Einstein', 'Team Appy']
@@ -299,7 +298,7 @@ function TeamSetup({ onStartGame }) {
     setNumTeams(num)
     const newTeamNames = []
     for (let i = 0; i < num; i++) {
-      newTeamNames.push(teamNames[i] || defaultTeamNames[i] || ("Team " + (i + 1)))
+      newTeamNames.push(teamNames[i] || defaultTeamNames[i] || 'Team ' + (i + 1))
     }
     setTeamNames(newTeamNames)
   }
@@ -318,47 +317,43 @@ function TeamSetup({ onStartGame }) {
   return (
     <div className="team-setup">
       <header className="header">
-        <h1>🌕 Mid-Autumn Festival Jeopardy 🏮</h1>
+        <h1>Mid-Autumn Festival Jeopardy</h1>
       </header>
       <div className="setup-content">
-          <h2>Game Setup</h2>
-          
-          <div className="team-count-selection">
-            <h3>How many teams?</h3>
-            <div className="team-count-buttons">
-              {[2, 3, 4].map(num => (
-                <button
-                  key={num}
-                  className={`team-count-btn ${numTeams === num ? 'active' : ''}`}
-                  onClick={() => handleNumTeamsChange(num)}
-                >
-                  {num} Teams
-                </button>
-              ))}
-            </div>
+        <h2>Game Setup</h2>
+        <div className="team-count-selection">
+          <h3>How many teams?</h3>
+          <div className="team-count-buttons">
+            {[2, 3, 4].map(num => (
+              <button
+                key={num}
+                className={'team-count-btn' + (numTeams === num ? ' active' : '')}
+                onClick={() => handleNumTeamsChange(num)}
+              >
+                {num} Teams
+              </button>
+            ))}
           </div>
-
-          <div className="team-names">
-            <h3>Team Names</h3>
-            <div className="team-name-inputs">
-              {teamNames.map((name, index) => (
-                <div key={index} className="team-name-input">
-                  <label>{"Team " + (index + 1) + ":"}</label>
-                  <input
-                    type="text"
-                    value={name}
-                    onChange={(e) => handleTeamNameChange(index, e.target.value)}
-                    placeholder={"Team " + (index + 1)}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <button className="start-game-btn" onClick={handleStartGame}>
-            Start Game! 🚀
-          </button>
         </div>
+        <div className="team-names">
+          <h3>Team Names</h3>
+          <div className="team-name-inputs">
+            {teamNames.map((name, index) => (
+              <div key={index} className="team-name-input">
+                <label>Team {index + 1}:</label>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => handleTeamNameChange(index, e.target.value)}
+                  placeholder={'Team ' + (index + 1)}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+        <button className="start-game-btn" onClick={handleStartGame}>
+          Start Game!
+        </button>
       </div>
     </div>
   )
