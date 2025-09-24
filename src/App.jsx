@@ -299,7 +299,7 @@ function TeamSetup({ onStartGame }) {
     setNumTeams(num)
     const newTeamNames = []
     for (let i = 0; i < num; i++) {
-      newTeamNames.push(teamNames[i] || defaultTeamNames[i] || `Team ${i + 1}`)
+      newTeamNames.push(teamNames[i] || defaultTeamNames[i] || ("Team " + (i + 1)))
     }
     setTeamNames(newTeamNames)
   }
@@ -316,10 +316,11 @@ function TeamSetup({ onStartGame }) {
   }
 
   return (
-    <div className="app">
-      <div className="team-setup">
+    <div className="team-setup">
+      <header className="header">
         <h1>🌕 Mid-Autumn Festival Jeopardy 🏮</h1>
-        <div className="setup-content">
+      </header>
+      <div className="setup-content">
           <h2>Game Setup</h2>
           
           <div className="team-count-selection">
@@ -342,12 +343,12 @@ function TeamSetup({ onStartGame }) {
             <div className="team-name-inputs">
               {teamNames.map((name, index) => (
                 <div key={index} className="team-name-input">
-                  <label>Team {index + 1}:</label>
+                  <label>{"Team " + (index + 1) + ":"}</label>
                   <input
                     type="text"
                     value={name}
                     onChange={(e) => handleTeamNameChange(index, e.target.value)}
-                    placeholder={`Team ${index + 1}`}
+                    placeholder={"Team " + (index + 1)}
                   />
                 </div>
               ))}

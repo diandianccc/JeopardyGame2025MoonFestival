@@ -452,44 +452,61 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+  background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 50%, #0a0e1a 100%);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
 }
 
-.team-setup h1 {
-  margin-bottom: 3rem;
-  font-size: 3rem;
+.team-setup .header {
   text-align: center;
-  background: linear-gradient(90deg, #d4af37, #ffd700);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem 1rem;
+  background: #000000;
+  color: #ffffff;
+  border-bottom: 2px solid #1a4fa0;
+}
+
+.team-setup .header h1 {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .setup-content {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  padding: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  border: 2px solid #d4af37;
-  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
   width: 100%;
 }
 
 .setup-content h2 {
   text-align: center;
-  color: #d4af37;
+  color: #ffd700;
+  font-family: 'Oswald', sans-serif;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .setup-content h3 {
   color: #ffffff;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.3rem;
-  margin-bottom: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .team-count-selection {
@@ -504,29 +521,31 @@
 }
 
 .team-count-btn {
-  background: linear-gradient(135deg, #2c3e50, #34495e);
+  background: #1a4fa0;
   color: #ffffff;
-  border: 2px solid transparent;
-  padding: 1rem 1.5rem;
+  border: 2px solid #3b82f6;
+  padding: 1.2rem 2rem;
+  font-family: 'Oswald', sans-serif;
   font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 10px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  min-width: 100px;
+  transition: all 0.2s ease;
+  min-width: 120px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .team-count-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
-  border-color: #d4af37;
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
 .team-count-btn.active {
-  background: linear-gradient(135deg, #d4af37, #ffd700);
-  color: #1a1a2e;
-  border-color: #ffd700;
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+  background: #ffd700;
+  color: #000000;
+  border-color: #b8860b;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
 }
 
 .team-names {
@@ -547,66 +566,86 @@
 
 .team-name-input label {
   color: #ffffff;
-  font-weight: bold;
-  min-width: 80px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  min-width: 100px;
   font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .team-name-input input {
   flex: 1;
-  padding: 0.8rem 1rem;
-  border: 2px solid #34495e;
-  border-radius: 8px;
-  background: rgba(52, 73, 94, 0.3);
+  padding: 1rem 1.2rem;
+  border: 2px solid #1a4fa0;
+  background: rgba(26, 79, 160, 0.1);
   color: #ffffff;
+  font-family: 'Oswald', sans-serif;
   font-size: 1rem;
-  transition: all 0.3s ease;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .team-name-input input:focus {
   outline: none;
-  border-color: #d4af37;
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
-  background: rgba(52, 73, 94, 0.5);
+  border-color: #ffd700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  background: rgba(26, 79, 160, 0.2);
 }
 
 .team-name-input input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .start-game-btn {
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
-  color: white;
-  border: none;
-  padding: 1.2rem 2rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  border-radius: 12px;
+  background: #ffd700;
+  color: #000000;
+  border: 3px solid #b8860b;
+  padding: 1.5rem 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   width: 100%;
-  box-shadow: 0 8px 25px rgba(46, 204, 113, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .start-game-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(46, 204, 113, 0.4);
+  background: #ffed4e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
 }
 
 /* Responsive adjustments for team setup */
 @media (max-width: 768px) {
-  .team-setup h1 {
-    font-size: 2.2rem;
+  .team-setup .header h1 {
+    font-size: 1.8rem;
   }
   
   .setup-content {
-    padding: 2rem;
-    margin: 1rem;
+    padding: 2rem 1rem;
+  }
+  
+  .setup-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .setup-content h3 {
+    font-size: 1.1rem;
   }
   
   .team-count-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .team-count-btn {
+    min-width: 200px;
+    padding: 1rem 1.5rem;
   }
   
   .team-name-input {
@@ -618,5 +657,10 @@
   .team-name-input label {
     min-width: auto;
     text-align: center;
+  }
+  
+  .start-game-btn {
+    font-size: 1.2rem;
+    padding: 1.2rem 1.5rem;
   }
 }
