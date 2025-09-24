@@ -1,16 +1,87 @@
-# React + Vite
+# 🌕 Mid-Autumn Festival Jeopardy Game 🏮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An educational and fun Jeopardy-style game celebrating the Mid-Autumn Festival! Perfect for introducing American coworkers to East Asian cultural traditions through an engaging, familiar game show format.
 
-Currently, two official plugins are available:
+## 🎮 Game Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Authentic Jeopardy Design** - Professional TV show appearance with blue and gold color scheme
+- **6 Educational Categories** - Moon Festival Basics, Legends of the Moon, Moon Festival Customs, All About Our Moon, Space & Exploration, Around the World
+- **30 Questions Total** - 5 difficulty levels ($200, $400, $600, $800, $1000) per category
+- **2-4 Team Support** - Customizable team names with fun defaults (Team Astro, Team Cody, Team Einstein, Team Appy)
+- **Professional Scoring** - Real-time score tracking with turn management
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile devices
+- **Cultural Education** - Learn about mooncakes, Chang'e, lanterns, and traditions across different countries
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Play the game at: [https://yourusername.github.io/jeopardy-game/](https://yourusername.github.io/jeopardy-game/)
 
-## Expanding the ESLint configuration
+## 🛠️ Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+```bash
+git clone https://github.com/yourusername/jeopardy-game.git
+cd jeopardy-game
+npm install
+```
+
+### Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Deploy to GitHub Pages
+```bash
+npm run deploy
+```
+
+## 🎯 How to Play
+
+1. **Team Setup** - Choose 2-4 teams and customize team names
+2. **Select Questions** - Click any dollar amount to reveal a question
+3. **Answer & Score** - Show the answer and mark correct/incorrect
+4. **Team Rotation** - Wrong answers automatically switch to the next team
+5. **Win the Game** - Team with the highest score wins!
+
+## 📚 Educational Content
+
+Learn about:
+- Traditional mooncakes and festival foods
+- Chang'e and the Jade Rabbit legends
+- Festival celebrations across Vietnam, Korea, Japan, and more
+- Moon science and space exploration
+- Cultural significance and modern traditions
+
+## 🌟 Perfect For
+
+- Office team building events
+- Cultural awareness workshops
+- Educational presentations
+- Family game nights
+- International student orientations
+
+## 🔧 Built With
+
+- **React 19** - Modern UI framework
+- **Vite** - Fast build tool and dev server
+- **CSS3** - Custom styling with gradients and animations
+- **Google Fonts** - Professional Oswald typography
+- **GitHub Pages** - Free hosting and deployment
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+*Created with ❤️ to share the beauty of Mid-Autumn Festival traditions*
